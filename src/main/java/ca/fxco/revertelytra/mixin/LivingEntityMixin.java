@@ -23,8 +23,7 @@ public class LivingEntityMixin {
                     target="Lnet/minecraft/entity/LivingEntity;emitGameEvent(Lnet/minecraft/world/event/GameEvent;)V"
     ))
     private void reAddDurability(CallbackInfo ci, boolean bl, ItemStack itemStack, int i) {
-        int lvt4 = i / 10;
-        if (lvt4 % 2 == 0) {
+        if ((i/10) % 2 == 0) {
             itemStack.damage(1, self, lvt0 -> lvt0.sendEquipmentBreakStatus(EquipmentSlot.CHEST));
         }
     }
