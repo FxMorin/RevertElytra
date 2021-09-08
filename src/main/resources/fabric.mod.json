@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "revertelytra",
+  "version": "${version}",
+
+  "name": "Revert Elytra to 1.17",
+  "description": "A mod which reverts the elytra mechanics back to 1.17",
+  "authors": [
+    "PR0CESS"
+  ],
+
+  "license": "CC0-1.0",
+  "icon": "assets/revertelytra/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ca.fxco.revertelytra.RevertElytra"
+    ]
+  },
+  "mixins": [
+    "revertelytra.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "minecraft": "1.18.x",
+    "java": ">=16"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ca.fxco.revertelytra.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "FireworkRocketEntityMixin",
+    "FireworkRocketItemMixin",
+    "LivingEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
